@@ -1,0 +1,40 @@
+/*
+Error: Invalid US-ASCII character "\xE2"
+        on line 103 of /Applications/XAMPP/xamppfiles/htdocs/cocktailrobot/scss/mobilemenu.scss
+
+98: 	}
+99: 	.primary-nav.open li { 
+100: 		display: block; 
+101: 	}
+102: 
+103: 	/* Submenus – optional .parent class indicates dropdowns *\/
+104: 
+105: 	.primary-nav > li:hover > a {
+106: 		background: rgba(0,0,0,.5);
+107: 		border-bottom-color: transparent;
+108: 	}
+
+Backtrace:
+/Applications/XAMPP/xamppfiles/htdocs/cocktailrobot/scss/mobilemenu.scss:103
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1323:in `rescue in block in find_encoding_error'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1320:in `block in find_encoding_error'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each_with_index'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `find_encoding_error'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/util.rb:896:in `check_sass_encoding'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:423:in `check_encoding!'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:379:in `_to_tree'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
+/Users/brettrick/Downloads/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid US-ASCII character \"\xE2\"\A         on line 103 of /Applications/XAMPP/xamppfiles/htdocs/cocktailrobot/scss/mobilemenu.scss\A \A 98: 	}\A 99: 	.primary-nav.open li { \A 100: 		display: block; \A 101: 	}\A 102: \A 103: 	/* Submenus – optional .parent class indicates dropdowns */\A 104: \A 105: 	.primary-nav > li:hover > a {\A 106: 		background: rgba(0,0,0,.5);\A 107: 		border-bottom-color: transparent;\A 108: 	}"; }
