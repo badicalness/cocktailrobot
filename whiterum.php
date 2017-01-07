@@ -1,5 +1,32 @@
 <?php include'header.php' ?>
-    
+      <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+  <script>
+  
+$(document).ready(function(){
+
+    $("#thover").click(function(){
+		$(this).fadeOut();
+    $("#tpopup").fadeOut();
+	});
+  
+  
+   $("#tclose").click(function(){
+		$("#thover").fadeOut();
+    $("#tpopup").fadeOut();
+	});
+
+    $("#test").click(function(){
+        $("#thover")
+            .css("visibility", "visible")
+            .fadeIn("slow", function(){});
+        $("#tpopup")
+            .css("visibility", "visible")
+            .fadeIn("slow", function(){});
+    });
+
+});
+
+</script>
     <!-- page content here -->
 <div id="contentWrapper">
     <div id="content" class="clearfix">
@@ -7,48 +34,76 @@
         
         <div class="row">
 
-            <div class="column">
-
+           <div class="column">
                 <article>
                     <h3>
-
-                        <figure>
+                    <span>
+                        <figure id="test">
+                            <div id="drink">
+                                <div class="popup_box">
+								<a class="popup_button" href="#popup11">
                             <img src="images/south.jpg" alt="South Bank Cocktail">
+                                </a>
                             <h3>South Bank</h3>
-                            <figcaption>
+                             </div>
+                             </div>
+                        </figure></span>
+                            <!--<div id="tpopup" style="visibility: hidden">-->
+                            <!--<a href="google.com" class="lightbox_trigger">-->
+                        <div id="popup11" class="popup_overlay">
+	                    <div class="popup">
+                            <img src="images/south.jpg" alt="South Bank Cocktail">
+                            
+                            <h3>South Bank</h3>
+                            <a class="popup_close" href="#">&times;</a>
+		                <div class="popup_content">
 
-                        <p>Ingredients:</p>
+                            <p>Ingredients:</p>
                         <p></br>1 part white rum
                            </br>1 part gin
                         </p>
-
-                            </figcaption>
-                        </figure>
+                                <?php include'button.php' ?>  
+                        </div>
+                        </div>   
+                        </div>   
                     </h3>
-
                 </article>
                 <article>
                     <h3>
-
-                        <figure>
+                    <span>
+                        <figure id="test">
+                            <div id="drink">
+                                <div class="popup_box">
+								<a class="popup_button" href="#popup12">
                             <img src="images/rocket.jpg" alt="Rocket Fuel Cocktail">
+                                </a>
                             <h3>Rocket Fuel</h3>
-                            <figcaption>
+                             </div>
+                             </div>
+                        </figure></span>
+                            <!--<div id="tpopup" style="visibility: hidden">-->
+                            <!--<a href="google.com" class="lightbox_trigger">-->
+                        <div id="popup12" class="popup_overlay">
+	                    <div class="popup">
+                            <img src="images/rocket.jpg" alt="Rocket Fuel Cocktail">
+                            
+                            <h3>Rocket Fuel</h3>
+                            <a class="popup_close" href="#">&times;</a>
+		                <div class="popup_content">
 
-                        <p>Ingredients:</p>        
+                            <p>Ingredients:</p>        
                         <p></br>2 parts vodka
                            </br>1 part tequila
                            </br>1 parts white rum
-                        </p>  
-
-                            </figcaption>
-                        </figure>              
+                        </p>
+                                <?php include'button.php' ?>  
+                        </div>
+                        </div>   
+                        </div>   
                     </h3>
-
                 </article>
             </div> <!--end of column-->
-
-        </div> <!--row div-->
+        </div> <!--end of row-->
 
 
 

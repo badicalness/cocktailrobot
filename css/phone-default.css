@@ -29,6 +29,12 @@ header img {
 	width: 120px;
 	border: solid 4px black;
 }
+.title{
+	font-size: 2em; 
+	padding-top: .5em;
+	padding-right: 2em; 
+	color: white;
+}
 header h1 {
 	font-family: bold, 'Apple Chancery';
 	font-style: italic;
@@ -81,20 +87,15 @@ article {
 article figure {
 	overflow: hidden;
 	width: 100%;
-	transition: -webkit-transform 0.25s ease;
-    transition: transform 0.25s ease;
 }
-article figure:active {
-    -webkit-transform: scale(2);
-    transform: scale(2);
-	border: 2px solid white;
-}
+
 article figure img {
 	width: 46%;
 	height: 230px;
 	margin-right: 4%;
 	float: left;
 	border: 1px solid black;
+	cursor: pointer;
 }
 article figure figcaption {
 	display: inline;
@@ -102,8 +103,116 @@ article figure figcaption {
 	font-size: .7em;
 	color: #06518a;
 }
+/*#thover{
+  position:fixed;
+  background:#000;
+  width:100%;
+  height:100%;
+  opacity: .6
+}
+
+#tpopup{
+  position:absolute;
+  width:300px;
+  background:#fff;
+  left:50%;
+  top:50%;
+  border-radius:5px;
+  padding:30px 0;
+  margin-left:-150px; 
+  margin-top:-75px; 
+  text-align:center;
+  box-shadow:0 0 5px 0 #000;
+}
+#tpopup img {
+	width: 300px;
+}
+#tclose{
+  position:absolute;
+  background:black;
+  color:white;
+  right:-15px;
+  top:-15px;
+  border-radius:50%;
+  width:30px;
+  height:30px;
+  line-height:30px;
+  text-align:center;
+  font-size:8px;
+  font-weight:bold;
+  font-family:'Arial Black', Arial, sans-serif;
+  cursor:pointer;
+  box-shadow:0 0 10px 0 #000;
+}*/
 
 
+
+
+.popup_box {
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  background-clip: padding-box;
+  text-align: center;
+}
+.popup img {
+  width: 200px;
+}
+
+.popup_overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.popup_overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 80%;
+  position: relative;
+  
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .popup_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .popup_close:hover {
+  color: #7db9e8;
+}
+.popup .popup_content {
+  max-height: auto;
+  overflow: auto;
+}
+
+@media screen and (max-width: 300px){
+
+  .popup{
+    width: 70%;
+  }
+}
 /*----- Form -----*/
 /*form {
   margin: 50px 0 0 0;
@@ -159,7 +268,7 @@ form div {
 footer {
 	clear: both;
 	text-align: center;
-	padding: 1em;
+	/*padding: 1em;*/
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#06518a+0,7db9e8+100 */
 background: #06518a; /* Old browsers */
 background: -moz-linear-gradient(top,  #06518a 0%, #7db9e8 100%); /* FF3.6+ */

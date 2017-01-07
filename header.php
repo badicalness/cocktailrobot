@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 
-<!-- This start file was build by Paul Cheney  -->
 <title>Cocktail Robot</title>
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging whena phone is turned sideways-->
@@ -34,6 +33,18 @@
 <!-- moble menu -->
 <link href="css/mobilemenu.css" rel="stylesheet">
 
+
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script defer src="scripts/jquery-3.1.0.min.js"></script>
+    <script defer src="scripts/app.js"></script>
+
+    <script>
+        window.appConfig = {
+            serverUrl: '127.0.0.1'
+        }
+    </script>
 <!--[if lt IE 9]>
 	<script src="http://php5shim.googlecode.com/svn/trunk/php5.js"></script>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -41,13 +52,13 @@
      
 </head>
 <body>
-	
+<div id="thover" style="visibility: hidden"></div>	
 <div id="headerWrapper">
 	<header class="clearfix">
 
         <img src="images/logo.jpg" alt="logo"/>
     <hgroup>
-    <h1  media="screen and (min-width:600px)" style="font-size: 4em; padding-right: 2em; color: white;">Cocktail Robot</h1>
+    <h1 class="title">Cocktail Robot</h1>
     <h2></h2>
     </hgroup>
     </header>
@@ -59,8 +70,8 @@
     <nav>
     <ul class="primary-nav clearfix">
 
-        <li><a href="index.php">Home</a></li>
-    	<li class="parent"><a href="#">Drinks</a>
+        <li><a href="index.php">Cocktails</a></li>
+    	<li class="parent"><a href="#">Liquors</a>
             <ul>
                 <li><a href="tequila.php">Tequila</a></li>
                 <li><a href="gin.php">Gin</a></li>
@@ -70,9 +81,9 @@
             </ul>
         </li>
 
-    	<li><a href="custom.php">Custom</a></li>
+    	<li><a href="custom.php">Customize</a></li>
 
-    	<li><a href="favorites.php">Favorites</a></li>
+    	<!--<li><a href="favorites.php">Favorites</a></li>-->
 
     </ul>
     <button class="nav-button">Toggle Navigation</button>
